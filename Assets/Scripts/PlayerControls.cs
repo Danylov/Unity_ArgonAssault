@@ -6,11 +6,11 @@ public class PlayerControls : MonoBehaviour
 {
     [Header("General Setup Settings")]
     [Tooltip("How fast ship moves up and down based upon player input")]
-    [SerializeField] float controlSpeed = 10f;
+    [SerializeField] float controlSpeed = 30f;
     [Tooltip("Range of player moving on X axis")]
-    [SerializeField] float xRange = 10f;
+    [SerializeField] float xRange = 12f;
     [Tooltip("Range of player moving on Y axis")]
-    [SerializeField] float yRange = 10f;
+    [SerializeField] float yRange = 12f;
 
     [Header("Laser gun array")]
     [Tooltip("Add all player lasers here")]
