@@ -156,8 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5236762911991691581, guid: 01068abdbccea904199381c68157de82, type: 3}
+  hitVFX: {fileID: 5236762911991691581, guid: db2d6fd66cd2df44192cf57071c3d14d, type: 3}
   parent: {fileID: 387386927}
   scorePerHit: 15
+  hitPoints: 7
 --- !u!136 &248711486
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -353,8 +355,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5236762911991691581, guid: 01068abdbccea904199381c68157de82, type: 3}
+  hitVFX: {fileID: 5236762911991691581, guid: db2d6fd66cd2df44192cf57071c3d14d, type: 3}
   parent: {fileID: 387386927}
   scorePerHit: 15
+  hitPoints: 6
 --- !u!136 &495357363
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -573,8 +577,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5236762911991691581, guid: 01068abdbccea904199381c68157de82, type: 3}
+  hitVFX: {fileID: 5236762911991691581, guid: db2d6fd66cd2df44192cf57071c3d14d, type: 3}
   parent: {fileID: 387386927}
   scorePerHit: 15
+  hitPoints: 4
 --- !u!1 &1092368697
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +593,6 @@ GameObject:
   - component: {fileID: 1092368700}
   - component: {fileID: 1092368699}
   - component: {fileID: 1092368698}
-  - component: {fileID: 1092368702}
   m_Layer: 0
   m_Name: Bridge
   m_TagString: Untagged
@@ -672,39 +677,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1092368702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092368697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ee110eec6541942a90d4166481f500, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathVFX: {fileID: 0}
-  parent: {fileID: 0}
-  scorePerHit: 0
---- !u!1 &1104332884 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3954603214348731401, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
-  m_PrefabInstance: {fileID: 3954603215033919864}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1104332888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104332884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7639471715cc2840b33d3cb7a55be92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerShip: {fileID: 435355603}
 --- !u!1 &1981519888
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,8 +788,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5236762911991691581, guid: 01068abdbccea904199381c68157de82, type: 3}
+  hitVFX: {fileID: 5236762911991691581, guid: db2d6fd66cd2df44192cf57071c3d14d, type: 3}
   parent: {fileID: 387386927}
   scorePerHit: 15
+  hitPoints: 5
 --- !u!1 &2047880844
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,8 +825,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5236762911991691581, guid: 01068abdbccea904199381c68157de82, type: 3}
+  hitVFX: {fileID: 5236762911991691581, guid: db2d6fd66cd2df44192cf57071c3d14d, type: 3}
   parent: {fileID: 387386927}
   scorePerHit: 15
+  hitPoints: 3
 --- !u!136 &2047880846
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -944,7 +920,7 @@ GameObject:
   - component: {fileID: 2054097251}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1158,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 210.3
+      value: 223.7351
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1166,23 +1142,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 129.6
+      value: 122.03203
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.8775219
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.47953653
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1190,7 +1166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 57.31
       objectReference: {fileID: 0}
     - target: {fileID: 3954603214919349361, guid: d26319b8c2d7aaa42b4aaecae2807629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1395,6 +1371,10 @@ PrefabInstance:
     - target: {fileID: 8398552119755651528, guid: 50a4ad2349825984983d9d33368f405f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398552120100656215, guid: 50a4ad2349825984983d9d33368f405f, type: 3}
+      propertyPath: m_text
+      value: 'Your score: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 8398552120100656232, guid: 50a4ad2349825984983d9d33368f405f, type: 3}
       propertyPath: m_SizeDelta.x
