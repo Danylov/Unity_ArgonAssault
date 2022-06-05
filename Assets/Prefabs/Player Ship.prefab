@@ -285,7 +285,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5236762911991691581, guid: 28a535bfb0479664fab199bcadddacf8, type: 3}
       propertyPath: m_Name
-      value: Explosion VFX
+      value: Player Explosion VFX
       objectReference: {fileID: 0}
     - target: {fileID: 5236762911991691582, guid: 28a535bfb0479664fab199bcadddacf8, type: 3}
       propertyPath: m_RootOrder
