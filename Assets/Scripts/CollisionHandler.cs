@@ -11,7 +11,6 @@ public class CollisionHandler : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
      {
-         Debug.Log("CollisionHandler::OnTriggerEnter(...): other.tag = " + other.tag); // Отладка
          if (!other.CompareTag("Terrain"))  StartCrashSequence();
      }
 
