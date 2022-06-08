@@ -38,10 +38,10 @@ public class Enemy : MonoBehaviour
       var vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
       vfx.transform.parent = parentGameObject.transform;
       hitPoints--;
-      scoreBoard.IncreaseScore(scorePerHit);
    }
    void KillEnemy()
    {
+      scoreBoard.IncreaseScore(scorePerHit);
       var vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
       vfx.transform.parent = parentGameObject.transform;
       Destroy(gameObject);

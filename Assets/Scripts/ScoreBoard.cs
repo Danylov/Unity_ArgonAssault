@@ -12,12 +12,12 @@ public class ScoreBoard : MonoBehaviour
      void Start()
      {
          scoreText = GetComponent<TMP_Text>();
-         scoreText.text = "Your score: 0";
+         scoreText.text = "Score: 0";
      }
 
     public void IncreaseScore(int amountToIncrease)
     {
         score += amountToIncrease;
-        scoreText.text = "Your score: " + score;
+        scoreText.text = "Score: " + score;
     }
 }

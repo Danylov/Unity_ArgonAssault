@@ -542,7 +542,11 @@ PlayableDirector:
   m_ExposedReferences:
     m_References:
     - d1a4d1cbcdce6004db34fef842bf0e16: {fileID: 2047883888298902276}
+    - 41930cb90bda7ff4d84c5db9c9a40162: {fileID: 8398552118531509688}
     - 54cdf11036e715744acffb5f4a44d150: {fileID: 1673480412}
+    - b9ee373e125dc1c438c7925ead810c54: {fileID: 8398552118531509688}
+    - 2949f8d3ab8156b4aac452a6f2d4bd70: {fileID: 8398552118531509688}
+    - 26955881899c28e4e986197bce8bcdce: {fileID: 8398552118531509688}
 --- !u!1001 &468335813006055807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -972,6 +976,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a4ad2349825984983d9d33368f405f, type: 3}
+--- !u!1 &8398552118531509688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2174219380264248179, guid: 50a4ad2349825984983d9d33368f405f, type: 3}
+  m_PrefabInstance: {fileID: 8398552118531509687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8672771806760599741
 PrefabInstance:
   m_ObjectHideFlags: 0
