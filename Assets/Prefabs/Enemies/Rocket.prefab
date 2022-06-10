@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 5167640410853256861}
   - component: {fileID: 5157958203260636089}
   - component: {fileID: 5170409126042071233}
+  - component: {fileID: 2704754176170467193}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -368,9 +369,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5236762911991691581, guid: 01068abdbccea904199381c68157de82, type: 3}
   hitVFX: {fileID: 5236762911991691581, guid: db2d6fd66cd2df44192cf57071c3d14d, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 60
   hitPoints: 2
+--- !u!65 &2704754176170467193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5171606609071370793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.2209473, y: 3.4400399, z: 13.842939}
+  m_Center: {x: 0, y: -0.0000104904175, z: 0}
 --- !u!1 &5296953921516065857
 GameObject:
   m_ObjectHideFlags: 0

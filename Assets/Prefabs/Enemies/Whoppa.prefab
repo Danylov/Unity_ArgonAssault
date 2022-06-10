@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 3164945664710384271}
   - component: {fileID: 8323382210726614700}
   - component: {fileID: 303128187}
+  - component: {fileID: 8799310259205055358}
   m_Layer: 0
   m_Name: Whoppa
   m_TagString: Untagged
@@ -384,6 +385,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8799310259205055358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3152030285942267187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.865557, y: 4.2419853, z: 11.309123}
+  m_Center: {x: 0.00000047683713, y: -0.0000061988826, z: -0.0000011920928}
 --- !u!1 &3188882115029779812
 GameObject:
   m_ObjectHideFlags: 0

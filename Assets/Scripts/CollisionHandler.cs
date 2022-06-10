@@ -7,25 +7,35 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1.0f; 
-    [SerializeField] ParticleSystem crashVFX; 
+    [SerializeField] ParticleSystem crashVFX;
+    private int onAerodrome;
     
     void OnTriggerEnter(Collider other)
-     {
-         if (!other.CompareTag("Aerodrome"))  StartCrashSequence();
-     }
+    {
+        Debug.Log("OnTriggerEnter(Collider other)"); // Отладка
+        if (other.gameObject.CompareTag("Aerodrome"))
+        {
+            onAerodrome = 1;
+            Debug.Log("OnAerodrome = " + onAerodrome); // Отладка
+        }
+        else
+        {
+            if (onAerodrome == 0)  StartCrashSequence();
+        }
+    }
 
-     void StartCrashSequence()
-     {
-         crashVFX.Play();
-         GetComponent<MeshRenderer>().enabled = false;
-         GetComponent<PlayerControls>().enabled = false;
-         GetComponent<BoxCollider>().enabled = false;
-         Invoke("ReloadLevel", loadDelay);
-     }
+    void StartCrashSequence()
+    {
+        crashVFX.Play();
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<PlayerControls>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
+        Invoke("ReloadLevel", loadDelay);
+    }
 
-     void ReloadLevel()
-     {
-         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-         SceneManager.LoadScene(currentSceneIndex);
-     }
+    void ReloadLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
 }

@@ -66,7 +66,6 @@ public class PlayerControls : MonoBehaviour
     {
         foreach (GameObject laser in lasers)
         {
-            // laser.SetActive(isActive);
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = isActive;
         }
