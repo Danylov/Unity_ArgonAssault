@@ -11,7 +11,7 @@ public class CollisionHandler : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
      {
-         if (!other.CompareTag("Terrain"))  StartCrashSequence();
+         if (!other.CompareTag("Aerodrome"))  StartCrashSequence();
      }
 
      void StartCrashSequence()
