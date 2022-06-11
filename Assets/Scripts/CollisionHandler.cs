@@ -12,16 +12,7 @@ public class CollisionHandler : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OnTriggerEnter(Collider other)"); // Отладка
-        if (other.gameObject.CompareTag("Aerodrome"))
-        {
-            onAerodrome = 1;
-            Debug.Log("OnAerodrome = " + onAerodrome); // Отладка
-        }
-        else
-        {
-            if (onAerodrome == 0)  StartCrashSequence();
-        }
+        StartCrashSequence();
     }
 
     void StartCrashSequence()
